@@ -10,6 +10,11 @@ h1, h2, h3, h4, h5, h6 {
   margin: 5px 0;
 }
 
+p {
+  margin: 5px 0;
+}
+
+/* ================================ */
 .app {
   margin: 40px;
   display: flex;
@@ -18,17 +23,43 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
 }
 
+/* ================================ */
 .about {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.about h2 {
+  border-bottom: 3px solid #eb8575;
+}
+
+.profile-frame {
+  height: 250px;
+  width: 250px;
+  border-radius: 125px;
+  overflow: hidden;
+  position: relative;
+  margin: 10px;
+}
+
+.profile-picture {
+  height: 500px;
+  z-index: -10;
+  position: absolute;
+  top: -45%;
+  left: -23%;
+}
+
+/* ================================ */
 .project {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
 
+.project h2 {
+  border-bottom: 3px solid #78de87;
 }
 
 
