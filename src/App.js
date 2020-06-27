@@ -1,12 +1,15 @@
 import React from 'react';
-import './App.css';
+// import './App.css';
 import About from './components/About';
 import Project from './components/Project';
 import Resume from './components/Resume';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div className="app">
+    <>
+    <Navbar />
+    <div className="app container">
       <h1>
       hello, this is portfolio owo
       </h1>
@@ -14,6 +17,7 @@ function App() {
       <Project />
       <Resume />
     </div>
+    </>
   );
 }
 
