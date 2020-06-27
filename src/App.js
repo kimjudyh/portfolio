@@ -15,8 +15,8 @@ function App() {
       hello, this is portfolio owo
       </h1>
       <About />
-      <Project />
       <Resume />
+      <Project />
       <Footer />
     </div>
     </>

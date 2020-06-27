@@ -18,7 +18,8 @@ const ProjectTemplate = (props) => {
         </div>
       </div>
       <div className="col col-sm-9 col-md-6 ">
-        this will be filled with stuff with lots of stuff about my projects and what I liked about them and all that jazz. it will be very informative and fun to read! and it will be customized to each project wowow.
+        {/* this will be filled with lots of stuff about my projects and what I liked about them and all that jazz. it will be very informative and fun to read! and it will be customized to each project wowow. */}
+        {props.summary}
 
         {info.infoDisplay.display === 'none' ?
           <div className="clickable-icon wide" onClick={info.toggleInfoDisplay}>
@@ -35,10 +36,20 @@ const ProjectTemplate = (props) => {
       </div>
         <div className="row">
           
-      <div className="col col-sm-9 col-md-6 offset-4">
+      <div className="col col-sm-9 col-md-6 offset-4 underlined">
         <div style={info.infoDisplay} className="project-info">
           <h4>project technology</h4>
+            {props.projectTechnology}
+          <h4>project timeline</h4>
+            {props.timeline}
           <h4>best parts of project</h4>
+          <p>
+            what went well!
+          </p>
+          <h4>interesting code</h4>
+          <p>
+            markup?
+          </p>
           <div className="clickable-icon wide">
             <a href={props.githubURL} target="_blank" rel="noopener noreferrer">
             <i className="fa fa-github fa-lg" aria-label="link to github repo"></i> Github Repo

@@ -25,6 +25,11 @@ body {
   justify-content: center;
 }
 
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Lora', serif;
   font-weight: 600;
@@ -93,6 +98,7 @@ footer {
   flex-direction: column;
   align-items: center;
   margin-top: 10px;
+  width: 85%;
 }
 
 .about h2 {
@@ -136,6 +142,7 @@ footer {
 
 .individual-project {
   margin: 15px 0;
+  width: 100%;
 }
 
 .project-thumbnail-frame {
@@ -160,6 +167,10 @@ footer {
 .project-info {
   flex-direction: column;
   transition: opacity 0.3s linear;
+}
+
+.underlined {
+  border-bottom: 2px solid var(--peachy-pink);
 }
 
 
@@ -213,8 +224,8 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
   margin-bottom: 10px;
+  width: 85%;
 }
 
 .resume h2 {
@@ -230,5 +241,9 @@ footer {
 
   .about {
     padding: 0 10px;
+  }
+
+  .offset-4 {
+    margin-left: 0;
   }
 }
