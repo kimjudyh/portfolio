@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div className="container about">
+    <div className="about " id="about-link">
       <div className="profile-frame">
         <img className="profile-picture" src={process.env.PUBLIC_URL + '/images/nyc_prof_pic.jpg'} alt="profile picture"/>
       </div>

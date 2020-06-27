@@ -3,7 +3,7 @@ import ProjectTemplate from './ProjectTemplate';
 
 const Project = () => {
   return (
-    <div className="project">
+    <div className="project" id="project-link">
       <h2>projects</h2>
       <p>
         this is project owo
@@ -48,8 +48,6 @@ const Project = () => {
       />
 
       {/* Project 6 - Portfolio */}
-      <ProjectTemplate
-      />
     </div>
   )
 }

@@ -6,9 +6,9 @@ const ProjectTemplate = (props) => {
   const [leftPosition, setLeftPostition] = useState({left: props.left});
 
   return (
-    <>
-    <div className="row">
-      <div className="col l4">
+    <div className="individual-project">
+    <div className="row flex-s">
+      <div className="col col-sm-3 col-md-3 offset-1">
         <div className="project-thumbnail-frame">
           <a href={props.projectURL} target="_blank" rel="noopener noreferrer">
             <img className="project-thumbnail" 
@@ -17,8 +17,8 @@ const ProjectTemplate = (props) => {
           </a>
         </div>
       </div>
-      <div className="col l8">
-        this will be filled with stuff
+      <div className="col col-sm-9 col-md-6 ">
+        this will be filled with stuff with lots of stuff about my projects and what I liked about them and all that jazz.
 
         {info.infoDisplay.display === 'none' ?
           <div className="clickable-icon wide" onClick={info.toggleInfoDisplay}>
@@ -31,6 +31,9 @@ const ProjectTemplate = (props) => {
             see less <i className="fa fa-chevron-down fa-lg" aria-hidden="true" ></i>
           </div>
         }
+      </div>
+      </div>
+        <div className="row">
         <div style={info.infoDisplay} className="project-info">
           more info
           <h3>project technology</h3>
@@ -42,9 +45,8 @@ const ProjectTemplate = (props) => {
             </a>
         </div>
       </div>
+      </div>
     </div>
-    </div>
-    </>
   )
 }
 
