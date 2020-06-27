@@ -18,7 +18,7 @@ const ProjectTemplate = (props) => {
         </div>
       </div>
       <div className="col col-sm-9 col-md-6 ">
-        this will be filled with stuff with lots of stuff about my projects and what I liked about them and all that jazz.
+        this will be filled with stuff with lots of stuff about my projects and what I liked about them and all that jazz. it will be very informative and fun to read! and it will be customized to each project wowow.
 
         {info.infoDisplay.display === 'none' ?
           <div className="clickable-icon wide" onClick={info.toggleInfoDisplay}>
@@ -34,16 +34,25 @@ const ProjectTemplate = (props) => {
       </div>
       </div>
         <div className="row">
+          
+      <div className="col col-sm-9 col-md-6 offset-4">
         <div style={info.infoDisplay} className="project-info">
-          more info
-          <h3>project technology</h3>
-          <h3>best parts of project</h3>
-          <h3>what I'm most proud of</h3>
+          <h4>project technology</h4>
+          <h4>best parts of project</h4>
           <div className="clickable-icon wide">
-            <a href={props.githubURL}>
+            <a href={props.githubURL} target="_blank" rel="noopener noreferrer">
             <i className="fa fa-github fa-lg" aria-label="link to github repo"></i> Github Repo
             </a>
-        </div>
+          </div>
+          {props.figmaURL ?
+          <div className="clickable-icon wide">
+            <a href={props.figmaURL} target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-figma fa-lg" aria-label="link to figma board"></i> Figma Board 
+            </a>
+          </div>
+          : ''}
+
+      </div>
       </div>
       </div>
     </div>
@@ -54,13 +63,13 @@ export default ProjectTemplate;
 
 // custom hook to toggle element display between flex and none
 export const useInfoDisplay = () => {
-  const [infoDisplay, setInfoDisplay] = useState({display: 'none'})
+  const [infoDisplay, setInfoDisplay] = useState({display: 'none', opacity: 0})
   const toggleInfoDisplay = () => {
     // toggle show info state
     if (infoDisplay.display === 'none') {
-      setInfoDisplay({display: 'flex'})
+      setInfoDisplay({display: 'flex', opacity: 1} )
     } else {
-      setInfoDisplay({display: 'none'})
+      setInfoDisplay({display: 'none', opacity: 0})
     }
   }
   return ({

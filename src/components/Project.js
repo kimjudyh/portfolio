@@ -44,6 +44,7 @@ const Project = () => {
         thumbnailURL={process.env.PUBLIC_URL + '/images/desktop-profile.png'}
         projectURL='https://sandpiper-react.herokuapp.com/'
         githubURL='https://git.generalassemb.ly/judykim-ga/final-project-client'
+        figmaURL='https://www.figma.com/file/aC2C1JFg0NX5luGDARJL6x/birdwatching-journal?node-id=0%3A1'
         left='-30%'
       />
 
