@@ -2,12 +2,13 @@ import React from 'react';
 
 const Navbar = () => {
   return (
-    <nav className="navbar top navbar-expand-lg navbar-light ">
+    <nav className="navbar top navbar-expand-lg ">
       <div className="container">
-            <a className="nav-link navbar-brand logo" href="#"> Portfolio</a>
+            <a className="nav-link navbar-brand logo" href="#">Judy's Portfolio </a>
           {/* Hamburger Menu Button */}
     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsDropdown" aria-controls="navbarsDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
+      {/* <span className="navbar-toggler-icon"></span> */}
+      <i className="fa fa-bars"></i>
     </button>
     {/* Links in dropdown */}
     <div className="collapse navbar-collapse ml-auto" id="navbarsDropdown">
