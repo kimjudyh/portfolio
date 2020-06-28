@@ -218,7 +218,8 @@ footer {
 
 .individual-project {
   margin: 15px 0;
-  width: 100%;
+  /* width: 100%; */
+  width: 85%;
 }
 
 .project-thumbnail-frame {
@@ -291,6 +292,24 @@ footer {
 
 /* ================================ */
 /* ==== MEDIA QUERIES ==== */
+@media (max-width: 770px) {
+  .individual-project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+  }
+
+  .individual-project .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+
 @media (max-width: 450px) {
   .row:before, .row:after {
     display: inline-block;
@@ -304,7 +323,7 @@ footer {
     width: 85%;
   }
 
-  .flex-s {
+  .individual-project .col {
     display: flex;
     flex-direction: column;
     align-items: center;
