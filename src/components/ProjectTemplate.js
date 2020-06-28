@@ -7,7 +7,8 @@ const ProjectTemplate = (props) => {
 
   return (
     <div className="individual-project">
-    <div className="row flex-s align-items-center">
+    {/* <div className="row flex-s align-items-center"> */}
+    <div className="row  align-items-center">
       <div className="col col-sm-6 col-md-3 offset-1">
         <div className="project-thumbnail-frame">
           <a href={props.projectURL} target="_blank" rel="noopener noreferrer">
@@ -17,7 +18,7 @@ const ProjectTemplate = (props) => {
           </a>
         </div>
       </div>
-      <div className="col col-sm-9 col-md-6 ">
+      <div className="col col-12  col-md-6 ">
         {/* this will be filled with lots of stuff about my projects and what I liked about them and all that jazz. it will be very informative and fun to read! and it will be customized to each project wowow. */}
         {props.summary}
 
