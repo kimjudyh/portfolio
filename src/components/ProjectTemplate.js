@@ -9,7 +9,7 @@ const ProjectTemplate = (props) => {
     <div className="individual-project">
     {/* <div className="row flex-s align-items-center"> */}
     <div className="row  align-items-center">
-      <div className="col col-12  col-md-4 ">
+      <div className="col col-12  col-md-4 thumbnail-col">
         <div className="project-thumbnail-frame">
           <a href={props.projectURL} target="_blank" rel="noopener noreferrer">
             <img className="project-thumbnail" 
@@ -35,9 +35,9 @@ const ProjectTemplate = (props) => {
         }
       </div>
       </div>
-        <div className="row">
+      <div className="row ">
           
-      <div className="col col-sm-9 col-md-6 offset-4 underlined">
+      <div className="col col-12 col-md-8 offset-4 more-info">
         <div style={info.infoDisplay} className="project-info">
           <h4>project technology</h4>
             {props.projectTechnology}

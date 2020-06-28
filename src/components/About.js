@@ -19,11 +19,11 @@ const About = () => {
         </p>
       </div>
       <div className="about-picture-container">
-        <div className="about-picture-frame">
-          <img src={process.env.PUBLIC_URL + '/images/succulents.jpg'} alt="me holding succulents" title="What started as one plant has turned into dozens"/>
+        <div className="about-picture-frame d-none d-sm-block">
+          <img className="d-none d-sm-block" src={process.env.PUBLIC_URL + '/images/succulents.jpg'} alt="me holding succulents" title="What started as one plant has turned into dozens"/>
         </div>
-        <div className="about-picture-frame">
-          <img src={process.env.PUBLIC_URL + '/images/blackcomb_glacier.jpg'} alt="me at blackcomb glacier" title="Enjoying the view at Blackcomb Glacier before a short hike to the top"/>
+        <div className="about-picture-frame d-none d-md-block ">
+          <img className="d-none d-md-block" src={process.env.PUBLIC_URL + '/images/blackcomb_glacier.jpg'} alt="me at blackcomb glacier" title="Enjoying the view at Blackcomb Glacier before a short hike to the top"/>
         </div>
         <div className="about-picture-frame">
           <img src={process.env.PUBLIC_URL + '/images/farallon.jpg'} alt="me on a boat to the farallon islands" title="All smiles at the Farallon Islands despite choppy waves and cold seaspray"/>
