@@ -2,7 +2,7 @@ import React from 'react';
 
 const Navbar = () => {
   return (
-    <nav className="navbar top navbar-expand-lg ">
+    <nav className="navbar top navbar-expand-sm ">
       <div className="container">
         <a className="nav-link navbar-brand logo" href="#">Judy Kim </a>
         {/* Hamburger Menu Button */}
@@ -12,7 +12,7 @@ const Navbar = () => {
         </button>
         {/* Links in dropdown */}
         <div className="collapse navbar-collapse ml-auto" id="navbarsDropdown">
-          <ul className="navbar-nav ml-auto">
+          <ul className="navbar-nav ml-auto align-items-end">
             <li className="nav-item active" data-toggle="collapse" data-target="#navbarsDropdown">
               <a className="nav-link about-nav" href="#about-link">About</a>
             </li>

@@ -4,7 +4,6 @@ export const project1 = {
   summary: 
   <p>
     Pet-a-Bunny was my first project at General Assembly, and my first project using Javascript! My favorite part of this project was implementing achievements and having banners pop up when you obtain an achievement. Making this game gave me some serious nostalgia for my Neopets days. 
-    The most challenging part of this project was dealing with timers.
 
   </p>,
   projectTechnology:

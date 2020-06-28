@@ -66,6 +66,10 @@ p {
   align-items: center;
   justify-content: center;
 }
+.app h1 {
+  text-align: center;
+}
+
 
 /* ================================ */
 nav {
@@ -142,13 +146,16 @@ footer {
   justify-content: center;
   /* width: 100%; */
 }
+.project-blurb {
+  width: 85%;
+}
 
 .project h2 {
   border-bottom: 3px solid var(--green);
 }
 
 .project h4 {
-  border-bottom: 3px solid var(--peachy-pink);
+  border-bottom: 3px solid var(--green-faded);
   width: 150px;
 }
 
@@ -243,6 +250,30 @@ footer {
 .resume h2 {
   border-bottom: 3px solid var(--bright-blue);
 }
+.resume h4 {
+  border-bottom: 2px solid var(--bright-blue);
+  width: 90px;
+}
+
+.skills {
+  text-align: left;
+}
+
+.resume .row {
+  width: 100%;
+}
+
+.general-assembly-logo {
+  height: 50px;
+  margin-right: 6px;
+  margin-bottom: 6px;
+}
+
+.cornell-logo {
+  height: 45px;
+  margin-bottom: 6px;
+}
+
 
 /* ================================ */
 @media (max-width: 450px) {
@@ -257,5 +288,11 @@ footer {
 
   .offset-4 {
     margin-left: 0;
+  }
+   .individual-project .offset-1 {
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
