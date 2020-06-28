@@ -292,6 +292,10 @@ footer {
 /* ================================ */
 /* ==== MEDIA QUERIES ==== */
 @media (max-width: 450px) {
+  .row:before, .row:after {
+    display: inline-block;
+  }
+
   .individual-project {
     display: flex;
     flex-direction: column;
