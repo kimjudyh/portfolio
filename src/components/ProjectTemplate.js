@@ -8,7 +8,7 @@ const ProjectTemplate = (props) => {
   return (
     <div className="individual-project">
     <div className="row flex-s align-items-center">
-      <div className="col col-sm-3 col-md-3 offset-1">
+      <div className="col col-sm-6 col-md-3 offset-1">
         <div className="project-thumbnail-frame">
           <a href={props.projectURL} target="_blank" rel="noopener noreferrer">
             <img className="project-thumbnail" 
