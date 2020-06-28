@@ -55,6 +55,11 @@ const ProjectTemplate = (props) => {
             <i className="fa fa-github fa-lg" aria-label="link to github repo"></i> Github Repo
             </a>
           </div>
+          <div className="clickable-icon wide">
+            <a href={props.projectURL} target="_blank" rel="noopener noreferrer">
+            <i className="fa fa-link fa-lg" aria-label="link to deployed site"></i> Deployed Site 
+            </a>
+          </div>
           {props.figmaURL ?
           <div className="clickable-icon wide">
             <a href={props.figmaURL} target="_blank" rel="noopener noreferrer">

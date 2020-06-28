@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <nav className="navbar top navbar-expand-sm ">
       <div className="container">
-        <a className="nav-link navbar-brand logo" href="#">Judy Kim </a>
+        <a className="nav-link navbar-brand logo" href=" https://www.linkedin.com/in/judykim2014/">Judy Kim </a>
         {/* Hamburger Menu Button */}
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsDropdown" aria-controls="navbarsDropdown" aria-expanded="false" aria-label="Toggle navigation">
           {/* <span className="navbar-toggler-icon"></span> */}

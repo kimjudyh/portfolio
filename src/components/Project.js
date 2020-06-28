@@ -72,7 +72,7 @@ const Project = () => {
         thumbnailURL={process.env.PUBLIC_URL + '/images/anthro_shirt.png'}
         projectURL='https://www.anthropologie.com/shop/farm-rio-helena-clip-dot-blouse?category=new-clothes&color=090&type=STANDARD&quantity=1'
         githubURL='https://git.generalassemb.ly/judykim-ga/portfolio'
-        figmaURL='#'
+        figmaURL='https://www.figma.com/file/miqUKxh998OtEhfMgbYNT9/portfolio?node-id=0%3A1'
         summary={project6.summary}
         projectTechnology={project6.projectTechnology}
         timeline={project6.timeline}
