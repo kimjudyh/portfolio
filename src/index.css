@@ -3,9 +3,12 @@
   --anthro-background: #fdfdf9;
   --coral: #eb8575;
   --bright-blue: #72ddf5;
+  --bright-blue-faded: #72ddf5aa;
   --green: #78de87;
+  --green-faded: #78de87aa;
   --yellow: #f5e192;
   --peachy-pink: #ebaea7;
+  --peachy-pink-faded: #ebaea7aa;
 
 }
 
@@ -75,7 +78,16 @@ nav {
 }
 
 .nav-link:hover {
-  background-color: var(--peachy-pink);
+  background-color: var(--peachy-pink-faded);
+}
+.nav-link.about-nav:hover {
+  background-color: var(--peachy-pink-faded);
+}
+.nav-link.resume-nav:hover {
+  background-color: var(--bright-blue-faded);
+}
+.nav-link.projects-nav:hover {
+  background-color: var(--green-faded);
 }
 
 a:hover {
