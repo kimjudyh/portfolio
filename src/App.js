@@ -12,7 +12,7 @@ function App() {
     <Navbar />
     <div className="app container">
       <h1>
-      hello, this is portfolio owo
+        welcome to my portfolio
       </h1>
       <About />
       <Resume />

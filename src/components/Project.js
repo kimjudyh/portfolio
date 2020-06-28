@@ -6,9 +6,12 @@ const Project = () => {
   return (
     <div className="project" id="project-link">
       <h2>projects</h2>
+      <div className="project-blurb">
+
       <p>
-        this is project owo
+         Here are the projects that I am proud to showcase. Most of these came from my time at General Assembly and were completed under a time crunch.
       </p>
+      </div>
       {/* Project 1 - Pet a Bunny */}
       <ProjectTemplate
         thumbnailURL={process.env.PUBLIC_URL + '/images/game_preview.png'}
