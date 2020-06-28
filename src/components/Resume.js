@@ -74,22 +74,18 @@ const Resume = () => {
             B.S. in Mechanical Engineering, August 2010 - May 2014
           </li>
         </ul>
-      </div>
-      {/* <div className="row align-items-center" >  */}
-        {/* <div className="col col-12 col-md-5 offset-1 align-items-center"> */}
-          <p>
-            <a href={resumeURL}><i className="fa fa-file-pdf"></i> View my resume</a>
-          </p>
+
+        <h3>contact me</h3>
           <p>
             <i className="fa fa-envelope"></i> kimjudyh@gmail.com
-        </p>
-          <p>
-            <a href="https://www.linkedin.com/in/judykim2014/"><i className="fab fa-linkedin"></i> LinkedIn </a>
           </p>
-        {/* </div> */}
-        {/* <div className="col col-md-6 justify-content-center"> */}
-        {/* </div> */}
-      {/* </div> */}
+          <p>
+            <a href={resumeURL} target="_blank" rel="noopener noreferrer"><i className="fa fa-file-pdf"></i> View my resume</a>
+          </p>
+          <p>
+            <a href="https://www.linkedin.com/in/judykim2014/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i> LinkedIn </a>
+          </p>
+      </div>
     </div>
   )
 }
