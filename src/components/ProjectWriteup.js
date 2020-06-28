@@ -65,7 +65,7 @@ export const project5 = {
 export const project6 = {
   summary:
   <p>
-    this portfolio website. Is talking about it kind of like breaking the fourth wall? Shout out to this Anthropologie shirt for inspiring the color scheme of this portfolio #notsponsored.
+    This portfolio website. Is talking about it kind of like breaking the fourth wall? Shout out to this Anthropologie shirt for inspiring the color scheme of this portfolio #notsponsored.
   </p>,
   projectTechnology:
   <p>React</p>,

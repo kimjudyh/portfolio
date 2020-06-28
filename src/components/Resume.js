@@ -7,27 +7,63 @@ const Resume = () => {
     <div className="resume" id="resume-link">
       <h2>resume</h2>
       <p>
-        I'm currently seeking a fullstack software engineer position. 
+        I'm currently seeking a fullstack software engineer position. My knowledge of the frontend and backend lets me contribute and debug in any part of the stack. 
+      </p>
+      <p>
+        I've taken the manufacturing concept, design for x, or the idea of designing for downstream users, to heart and have transferred it to my coding projects. Just like how a spacecraft part needs to be designed for analysis, manufacturing, and testing, I strive to create software that meets the needs of a diverse group of users. 
       </p>
       <div className="skills">
-        <h4>skills</h4>
+        <h3>skills</h3>
         <p>
            I haz skills. Valuable skills!!
         </p>
-        <h4>experience</h4>
         <p>
-          I have experience! Yay experience!
-        </p>
-        <h4>education</h4>
+          <strong> Languages:</strong> Python 3 · JavaScript (ES5, ES6) · SQL · MATLAB · Java
+          </p>
         <p>
-           <strong>General Assembly, San Francisco</strong>
+          <strong>Front End:</strong> React · HTML · CSS · Flexbox · Bootstrap · Vanilla JavaScript · jQuery
         </p>
-                <ul>
+        <p>
+          <strong>Back End:</strong> Node.js · Express · MongoDB · Mongoose · Django · PostgreSQL
+        </p>
+        <p>
+          <strong>Coding Skills:</strong> Git · OOP · ORM · Data Structures · Algorithms · Continuous Integration · REST · MVC · Unix · vim · Virtual Environments · Pytest · numpy · pandas · Tableau · Travis CI · Postman · React Router
+
+        </p>
+        <p>
+          <strong>MechE Skills:</strong> CAD · Creo · ProE · Teamcenter Product Life Management · LabVIEW · ANSYS · SolidWorks · Inventor
+        </p>
+
+        <h3>experience</h3>
+        <p>
+          <strong>Lockheed Martin Space</strong>
+        </p>
+        <ul>
           <li>
-            Software Engineering Immersive, March 23 - June 16, 2020 (taken remotely due to Covid-19 lockdown)
+            Manufacturing Engineer, November 2017 - April 2019
           </li>
         </ul>
         <p>
+          <strong>Space Systems Loral</strong> (Maxar)
+        </p>
+        <ul>
+          <li>
+            Mechanical Design Engineer, March 2015 - August 2017
+          </li>
+        </ul>
+
+        <h3>education</h3>
+        <p>
+          <img className="general-assembly-logo" src={process.env.PUBLIC_URL + '/images/ga-logo-gear.png'} alt="general assembly logo"/>
+           <strong>General Assembly, San Francisco</strong>
+        </p>
+        <ul>
+          <li>
+            Software Engineering Immersive, March 23 - June 16, 2020
+          </li>
+        </ul>
+        <p>
+          <img className='cornell-logo' src={process.env.PUBLIC_URL + '/images/cornell_seal_simple_b31b1b.svg'} alt="cornell logo"/>
           <strong>Cornell University, Ithaca, NY</strong>
         </p>
         <ul>
@@ -39,8 +75,8 @@ const Resume = () => {
           </li>
         </ul>
       </div>
-      <div className="row align-items-center" > 
-        <div className="col col-12 col-md-5 offset-1 align-items-center">
+      {/* <div className="row align-items-center" >  */}
+        {/* <div className="col col-12 col-md-5 offset-1 align-items-center"> */}
           <p>
             <a href={resumeURL}><i className="fa fa-file-pdf"></i> View my resume</a>
           </p>
@@ -50,12 +86,10 @@ const Resume = () => {
           <p>
             <a href="https://www.linkedin.com/in/judykim2014/"><i className="fab fa-linkedin"></i> LinkedIn </a>
           </p>
-        </div>
-        <div className="col col-md-6 justify-content-center">
-          <img className="general-assembly-logo" src={process.env.PUBLIC_URL + '/images/ga-logo-gear.png'} alt="general assembly logo"/>
-          <img className='cornell-logo' src={process.env.PUBLIC_URL + '/images/cornell_logo_simple_b31b1b.svg'} alt="cornell logo"/>
-        </div>
-      </div>
+        {/* </div> */}
+        {/* <div className="col col-md-6 justify-content-center"> */}
+        {/* </div> */}
+      {/* </div> */}
     </div>
   )
 }
