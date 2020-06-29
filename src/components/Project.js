@@ -20,6 +20,7 @@ const Project = () => {
         summary={project1.summary}
         projectTechnology={project1.projectTechnology}
         timeline={project1.timeline}
+        bestParts={project1.bestParts}
       />
 
       {/* Project 2 - Imagerie */}
@@ -30,6 +31,7 @@ const Project = () => {
         summary={project2.summary}
         projectTechnology={project2.projectTechnology}
         timeline={project2.timeline}
+        bestParts={project2.bestParts}
         left='-40%'
       />
 
@@ -41,6 +43,8 @@ const Project = () => {
         summary={project3.summary}
         projectTechnology={project3.projectTechnology}
         timeline={project3.timeline}
+        bestParts={project3.bestParts}
+        challenges={project3.challenges}
         left='-10%'
       />
 
@@ -52,6 +56,7 @@ const Project = () => {
         summary={project4.summary}
         projectTechnology={project4.projectTechnology}
         timeline={project4.timeline}
+        bestParts={project4.bestParts}
         left='-40%'
       />
 
@@ -64,6 +69,7 @@ const Project = () => {
         summary={project5.summary}
         projectTechnology={project5.projectTechnology}
         timeline={project5.timeline}
+        bestParts={project5.bestParts}
         left='-30%'
       />
 
@@ -76,6 +82,7 @@ const Project = () => {
         summary={project6.summary}
         projectTechnology={project6.projectTechnology}
         timeline={project6.timeline}
+        bestParts={project6.bestParts}
         left='8%'
       />
     </div>

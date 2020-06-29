@@ -15,9 +15,6 @@ const Resume = () => {
       <div className="skills">
         <h3>skills</h3>
         <p>
-           I haz skills. Valuable skills!!
-        </p>
-        <p>
           <strong> Languages:</strong> Python 3 · JavaScript (ES5, ES6) · SQL · MATLAB · Java
           </p>
         <p>
