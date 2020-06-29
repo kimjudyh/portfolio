@@ -12,7 +12,11 @@ export const project1 = {
   <p>April 3 - April 10, 2020</p>,
   bestParts:
   <p>
-
+    It was so satisfying to see the all the pieces come together - the CSS, event listeners placed on the DOM, the timers to make bunnies and snakes pop up randomly, and the logic to enable or disable buttons.
+  </p>,
+  challenges:
+  <p>
+    I had trouble with the timers because I was forgetting to clear them! I was very perplexed as my level timer counted down at an accelerating pace. Once I figured that out, controlling the length of time a bunny appeared and how often it popped up during the level was more manageable. 
   </p>
 }
 
@@ -24,7 +28,7 @@ export const project2 = {
   projectTechnology:
   <><p>Node.js, Express, MongoDB</p>
   <p>Dependencies: bcyptjs, body-parser, cloudinary, connect-multiparty, connect-mongo, dotenv, ejs, express, express-session, method-override, mongoose</p>
-  <p>Deployed using Heroku</p>
+  <p>Deployed to Heroku</p>
   </>,
   timeline:
   <p>April 23 - May 1, 2020</p>,
@@ -35,6 +39,12 @@ export const project2 = {
   </p>
   <p>
     The design of the webpage was a compromise between me and my partner. My partner wanted a photo in the background, and I was initially against it because I thought it would make the site too busy when other photos were being shown. But with a dark theme laid over the background image, I think it turned well!
+  </p>
+  </>,
+  challenges:
+  <>
+  <p>
+
   </p>
   </>
 }
@@ -48,7 +58,7 @@ export const project3 = {
   <>
   <p>Django, Python, PostgreSQL</p>
   <p>Dependencies: django-bootstrap-datepicker-plus</p>
-  <p>Deployed using Heroku</p>
+  <p>Deployed to Heroku</p>
   </>,
   timeline:
   <p>May 13 - May 20, 2020</p>,
@@ -64,12 +74,29 @@ export const project3 = {
 export const project4 = {
   summary:
   <p>
-    Collabathon!
+    Collabathon! This was a collaboration between 5 designers and 1 other software engineer during a 2-day hackathon to create an accessible landing page for users and a dashboard for a fictional client, Avocados Anonymous. The website was designed for both mobile and desktop users.
   </p>,
   projectTechnology:
-  <p> Node.js, Express, MongoDB</p>,
+  <>
+  <p> Node.js, Express, MongoDB, Mongoose, Bootstrap</p>
+  <p>Deployed to Heroku</p>
+  </>
+  ,
   timeline:
-  <p>May 21 - May 22, 2020</p>
+  <p>May 21 - May 22, 2020</p>,
+  bestParts:
+  <>
+  <p>
+    I learned so much about designing a website during this collabathon, especially how to utilize Figma to establish the color scheme and font styles. I used the design concepts I learned from this project in my final project. 
+  </p>
+  <p>
+    Some code I'm proud of is the live signup form verification. This was a request from the design team that I wasn't sure I could fulfill, but working off of Bootstrap's input verification code, I got something working by presentation time. I attached event listeners on each input field that triggered verification on a focus out event. So if the user clicked the field and left without filling it out, a red x appeared. If the field was filled out correctly, a green checkmark appeared before the user hit submit.
+  </p>
+  </>,
+  challenges:
+  <p>
+    The biggest challenge was the lack of time. The design team did a great job providing us with a skeleton layout at the beginning so that Lisa and I could get started with the EJS templates and CSS. But making both the mobile and desktop versions was tough to do in the 2 days we had. There were also feature requests that we weren't able to get to, like sorting the client's dashboard by name, email, and date.
+  </p>
 }
 
 export const project5 = {
@@ -78,9 +105,26 @@ export const project5 = {
     Sandpiper was my Final project at General Assembly! birdwatching hoorayyyy
   </p>,
   projectTechnology:
-  <p> React, Node.js, Express, MongoDB</p>,
+  <>
+  <p> React, Node.js, Express, MongoDB</p>
+  <p>Dependencies:</p>
+  <p>Deployed to Heroku</p>
+  </>
+  ,
   timeline:
-  <p>June 4 - June 15, 2020</p>
+  <p>June 4 - June 15, 2020</p>,
+  bestParts:
+  <>
+  <p>
+
+  </p>
+  </>,
+  challenges:
+  <>
+  <p>
+
+  </p>
+  </>
 }
 
 export const project6 = {
@@ -91,7 +135,19 @@ export const project6 = {
   projectTechnology:
   <p>React</p>,
   timeline:
-  <p>June 25 - June 29, 2020</p>
+  <p>June 25 - June 29, 2020</p>,
+  bestParts:
+  <>
+  <p>
+    My favorite part was coming up with a design inspiration collage. I placed my color scheme and screenshots from Anthropologie onto a page in Figma and kept it up on my second monitor. The collage put me in a bright, tropical mood!
+  </p>
+  </>,
+  challenges:
+  <>
+  <p>
+    Deciding on a design was tough.
+  </p>
+  </>
 }
 
 const ProjectWriteup = {
