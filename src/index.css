@@ -8,6 +8,7 @@
   --green: #78de87;
   --green-faded: #78de87aa;
   --yellow: #f5e192;
+  --yellow-faded: #f5e192aa;
   --peachy-pink: #ebaea7;
   --peachy-pink-faded: #ebaea7aa;
 
@@ -66,6 +67,8 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: 0;
+  position: relative;
 }
 .app h1 {
   text-align: center;
@@ -115,11 +118,14 @@ nav {
 
 .nav-link {
   color: var(--main-text-color);
-  transition:  0.6s cubic-bezier(0.37, 0, 0.63, 1);
+  transition:  0.3s cubic-bezier(0.37, 0, 0.63, 1);
 }
 
 .nav-link:hover {
   background-color: var(--peachy-pink-faded);
+}
+.nav-link.scroll-top-nav:hover {
+  background-color: var(--yellow);
 }
 .nav-link.about-nav:hover {
   background-color: var(--peachy-pink-faded);
@@ -144,6 +150,81 @@ a:hover {
 footer {
   border-top: 2px solid var(--yellow);
   width: 70%;
+}
+
+/* ================================ */
+/* ==== STICKY BUTTON ==== */
+.sticky-scroll {
+  position: fixed;
+  top: 88vh;
+  right: 0vw;
+  background-color: var(--yellow-faded);
+  z-index: 10;
+}
+
+.sticky-scroll ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.sticky-scroll n
+
+.sticky {
+  position: fixed;
+  top: 88vh;
+  right: 0vw;
+  z-index: 10;
+  background-color: var(--anthro-background);
+}
+
+.sticky ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.sticky li {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  overflow: hidden;
+}
+
+.sticky .scroll-top-nav {
+  background-color: var(--yellow);
+}
+
+.sticky .cover {
+  position: absolute;
+  /* top: 2px; */
+  /* right: 2px; */
+  width: 1.5rem;
+  text-align: center;
+  margin: 5px;
+}
+
+.sticky li:hover {
+  width: 80%;
+  height: 100%;
+}
+
+.sticky li:hover .cover {
+  opacity: 0;
+  transition: .2s linear;
+}
+
+.sticky li:hover a {
+  opacity: 1;
+  transition: .2s linear;
+}
+
+.sticky a {
+  opacity: 0;
 }
 
 /* ================================ */

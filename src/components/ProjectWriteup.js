@@ -12,7 +12,7 @@ export const project1 = {
   <p>April 3 - April 10, 2020</p>,
   bestParts:
   <p>
-    It was so satisfying to see the all the pieces come together - the CSS, event listeners placed on the DOM, the timers to make bunnies and snakes pop up randomly, and the logic to enable or disable buttons.
+    It was so satisfying to see all the pieces come together - the CSS, event listeners placed on the DOM, the timers to make bunnies and snakes pop up randomly, and the logic to enable or disable buttons.
   </p>,
   challenges:
   <p>
@@ -37,13 +37,11 @@ export const project2 = {
   <p>
     I'm happy that I figured out how to integrate Cloudinary for image upload, storage, and retrieval. Since I didn't use their upload widget (I figured out how to do that for my final project), I used a simple CSS animation and client-side javascript to display a loading indicator.
   </p>
-  <p>
-    The design of the webpage was a compromise between me and my partner. My partner wanted a photo in the background, and I was initially against it because I thought it would make the site too busy when other photos were being shown. But with a dark theme laid over the background image, I think it turned well!
-  </p>
   </>,
   challenges:
   <>
   <p>
+    The design of the webpage was a compromise between me and my partner. My partner wanted a photo in the background, and I was initially against it because I thought it would make the site too busy when other photos were being shown. But with a dark theme laid over the background image, I think it turned well!
 
   </p>
   </>
@@ -102,12 +100,12 @@ export const project4 = {
 export const project5 = {
   summary:
   <p>
-    Sandpiper was my Final project at General Assembly! birdwatching hoorayyyy
+    Sandpiper was my Final project at General Assembly! Sandpiper is an app where you can keep track of the birds you saw and the photos you took of them. You can share entries, or birding sessions, with other users that went birding with you. This lets users compile the photos that might have otherwise lived on separate devices in the same spot.
   </p>,
   projectTechnology:
   <>
   <p> React, Node.js, Express, MongoDB</p>
-  <p>Dependencies:</p>
+  <p>Dependencies: Mongoose, Axios, Bing Maps, Cloudinary, React Router</p>
   <p>Deployed to Heroku</p>
   </>
   ,
@@ -116,7 +114,7 @@ export const project5 = {
   bestParts:
   <>
   <p>
-
+    Overcoming my initial discomfort with React and React Hooks to create an entire website using Hooks. It was a great exercise in learning by doing.
   </p>
   </>,
   challenges:
@@ -145,7 +143,7 @@ export const project6 = {
   challenges:
   <>
   <p>
-    Deciding on a design was tough.
+    Deciding on a design was tough. Deploying a Create React App using Github Pages.
   </p>
   </>
 }
