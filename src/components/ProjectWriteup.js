@@ -100,7 +100,7 @@ export const project4 = {
 export const project5 = {
   summary:
   <p>
-    Sandpiper was my Final project at General Assembly! Sandpiper is an app where you can keep track of the birds you saw and the photos you took of them. You can share entries, or birding sessions, with other users that went birding with you. This lets users compile the photos that might have otherwise lived on separate devices in the same spot.
+    Sandpiper was my Final project at General Assembly! I had the idea for this project months before I started the bootcamp, but didn't have the skills to create it. By the end of the course, I was able to see my idea come to life! Sandpiper is an app where you can keep track of the birds you saw and the photos you took of them. You can share entries, or birding sessions, with other users that went birding with you. This lets users compile the photos that might have otherwise lived on separate devices in the same spot.
   </p>,
   projectTechnology:
   <>
@@ -114,13 +114,16 @@ export const project5 = {
   bestParts:
   <>
   <p>
-    Overcoming my initial discomfort with React and React Hooks to create an entire website using Hooks. It was a great exercise in learning by doing.
+    I'm proud of overcoming my initial discomfort with React and React Hooks to create an entire website using Hooks. It was a great exercise in learning by doing. In addition to referencing the labs and homeworks we had done in class, I watched the <a href="https://youtu.be/dpw9EHDh2bM?t=1057" alt="Youtube video of React Today and Tomorrow and 90% Cleaner React with Hooks">official introduction of Hooks at the React Conf 2018</a> over and over again. With each new component and call to useState and useEffect, I became better at "thinking in React" and using Hooks. It was very gratifying to go from a sort of anxiousness over whether I could make the website as I envisioned it, to seeing the deployed product.
+  </p>
+  <p>
+    I also went all out during the planning phase and created detailed wireframes in Figma. I had tried to use Figma on the Django project, but my unfamiliarity with the tool and lack of time to learn it (we had one day to come up with all planning materials required for project approvals!) led me to use a more familiar tool, PowerPoint. But after seeing the power of Figma during the Collabathon, I was determined to use it for my final project wireframes. I inspected the Collabathon Figma board and used it as a guide when setting up my first frames. I also used the prototyping feature to mimic the user flow. This was an iterative process, as often I would realize that I was missing a screen.
   </p>
   </>,
   challenges:
   <>
   <p>
-
+    Creating a separate backend on a different server was challenging because I hadn't done it before. We learned about multi-server architecture during our React module and worked on code that the instructor had set up for us, but we hadn't made a 2-server system from scratch. Luckily, we went over how to use Postman to test our API endpoints, so when the time came to get the client-side talking to the backend (with CORS enabled!), it went smoothly.
   </p>
   </>
 }
@@ -143,7 +146,7 @@ export const project6 = {
   challenges:
   <>
   <p>
-    Deciding on a design was tough. Deploying a Create React App using Github Pages.
+    Deploying a Create React App to Github Pages was a bit more involved than I expected. I wanted to try a hosting service other than Heroku, which we had used in class for almost every project. The problem with the free tier of Heroku is that the server falls asleep after some (rather short) period of inactivity, and when it's time to wake up, it takes a minute. I figured that since my portfolio doesn't have a backend, I could use Github Pages. I ran into some gh-pages configuration issues, accidentally pushed the build files to the master branch, had to do a git reset --hard to restore the master branch to a previous commit, but a couple hours of determined troubleshooting led to a successful deployment! 
   </p>
   </>
 }

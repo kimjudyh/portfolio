@@ -52,10 +52,10 @@ const ProjectTemplate = (props) => {
             <h4>challenges</h4>
             {props.challenges}
 
-            <h4>interesting code</h4>
-            <p>
-              markup?
-            </p>
+            {/* <h4>interesting code</h4> */}
+            {/* <p> */}
+              {/* markup? */}
+            {/* </p> */}
             {/* Links */}
             <div className="clickable-icon wide">
               {/* Github */}
