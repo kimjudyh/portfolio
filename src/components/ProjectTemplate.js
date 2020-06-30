@@ -24,12 +24,12 @@ const ProjectTemplate = (props) => {
           {props.summary}
           {/* Show / Hide Info */}
           {info.infoDisplay.display === 'none' ?
-            <div className="clickable-icon wide" onClick={info.toggleInfoDisplay}>
+            <div className="clickable-icon wide info-toggle" onClick={info.toggleInfoDisplay}>
               {/* Show More */}
             see more <i className="fa fa-chevron-right fa-lg" aria-hidden="true" ></i>
             </div>
             :
-            <div className="clickable-icon wide" onClick={info.toggleInfoDisplay}>
+            <div className="clickable-icon wide info-toggle" onClick={info.toggleInfoDisplay}>
               {/* Hide */}
             see less <i className="fa fa-chevron-down fa-lg" aria-hidden="true" ></i>
             </div>
