@@ -1,3 +1,13 @@
+## Deployment Instructions
+Push changes to master branch
+
+npm run deploy: creates production build in gh-pages branch using gh-pages npm package
+
+If something goes wrong, try:
+
+$ node node_modules/gh-pages/bin/gh-pages-clean
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
