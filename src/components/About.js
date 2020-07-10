@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div className="about " id="about-link">
       <div className="profile-frame">
-        <img className="profile-picture" src={process.env.PUBLIC_URL + '/images/nyc_prof_pic.jpg'} alt="profile picture"/>
+        <img className="profile-picture" src={process.env.PUBLIC_URL + '/images/nyc_prof_pic_compressed.png'} alt="profile picture"/>
       </div>
       <h2>about me</h2>
       <div className="about-me">
