@@ -16,7 +16,7 @@ const Project = () => {
       <ProjectTemplate
         thumbnailURL={process.env.PUBLIC_URL + '/images/game_preview.png'}
         projectURL='https://pages.git.generalassemb.ly/judykim-ga/pet-a-bunny/'
-        githubURL='https://git.generalassemb.ly/judykim-ga/pet-a-bunny'
+        githubURL='https://github.com/kimjudyh/pet-a-bunny'
         summary={project1.summary}
         projectTechnology={project1.projectTechnology}
         timeline={project1.timeline}
@@ -28,7 +28,7 @@ const Project = () => {
       <ProjectTemplate 
         thumbnailURL={process.env.PUBLIC_URL + '/images/desktop_album_view.jpg'}
         projectURL='https://imagerie-sei.herokuapp.com/'
-        githubURL='https://git.generalassemb.ly/judykim-ga/project-one'
+        githubURL='https://github.com/kimjudyh/imagerie'
         summary={project2.summary}
         projectTechnology={project2.projectTechnology}
         timeline={project2.timeline}
@@ -41,7 +41,7 @@ const Project = () => {
       <ProjectTemplate
         thumbnailURL={process.env.PUBLIC_URL + '/images/tutor_marketplace_preview.png'}
         projectURL='https://tutor-marketplace-sei.herokuapp.com/'
-        githubURL='https://git.generalassemb.ly/judykim-ga/TutorMarketplace'
+        githubURL='https://github.com/kimjudyh/tutor-marketplace'
         summary={project3.summary}
         projectTechnology={project3.projectTechnology}
         timeline={project3.timeline}
@@ -54,7 +54,7 @@ const Project = () => {
       <ProjectTemplate
         thumbnailURL={process.env.PUBLIC_URL + '/images/home-page.png'}
         projectURL='https://avo-anon-collabathon.herokuapp.com/'
-        githubURL='https://git.generalassemb.ly/judykim-ga/collabathon'
+        githubURL='https://github.com/kimjudyh/ga-collabathon'
         summary={project4.summary}
         projectTechnology={project4.projectTechnology}
         timeline={project4.timeline}
@@ -67,7 +67,7 @@ const Project = () => {
       <ProjectTemplate
         thumbnailURL={process.env.PUBLIC_URL + '/images/desktop-profile.png'}
         projectURL='https://sandpiper-react.herokuapp.com/'
-        githubURL='https://git.generalassemb.ly/judykim-ga/final-project-client'
+        githubURL='https://github.com/kimjudyh/sandpiper-client'
         figmaURL='https://www.figma.com/file/aC2C1JFg0NX5luGDARJL6x/birdwatching-journal?node-id=0%3A1'
         summary={project5.summary}
         projectTechnology={project5.projectTechnology}
@@ -81,7 +81,7 @@ const Project = () => {
       <ProjectTemplate 
         thumbnailURL={process.env.PUBLIC_URL + '/images/anthro_shirt.png'}
         projectURL='https://www.anthropologie.com/shop/farm-rio-helena-clip-dot-blouse?category=new-clothes&color=090&type=STANDARD&quantity=1'
-        githubURL='https://git.generalassemb.ly/judykim-ga/portfolio'
+        githubURL='https://github.com/kimjudyh/portfolio'
         figmaURL='https://www.figma.com/file/miqUKxh998OtEhfMgbYNT9/portfolio?node-id=0%3A1'
         summary={project6.summary}
         projectTechnology={project6.projectTechnology}
