@@ -151,6 +151,44 @@ export const project6 = {
   </>
 }
 
+export const project7 = {
+  summary:
+  <p>
+    An analysis tool for all your Pokemon Go PVP needs! If you're wondering which of your 50 Mudkips to keep and use in Go Battle League, this is the tool for you. Easily input as many Pokemon stats as you need, then analyze all of them at once for PVP eligibility, power up costs, and what CP it will evolve to. This project was a refactor of my first Python project, a Command Line Interface and desktop GUI app, into a fullstack web app. 
+  </p>,
+  projectTechnology:
+  <>
+  <p>
+    Django, Python3, PostgreSQL
+  </p>
+  <p>
+    Dependencies: django-picklefield, Bootstrap 4
+  </p>
+  <p>
+    Deployed to Heroku
+  </p>
+  </>,
+  timeline:
+  <p>
+    July 31, 2020 - August 10, 2020
+  </p>,
+  bestParts:
+  <>
+  <p>
+    Getting my client-side JavaScript working for the endless form and autocomplete features! Since I chose Django as my framework, as opposed to creating a more complicated web architecture with Django on the backend, React on the frontend, and an API to connect the two, I wasn't sure how much I could accomplish with vanilla JavaScript. I dove right back in to the world of DOM manipulation and was able to accomplish all of the features I wanted, from live form data validation to executing fetch requests for Pokemon evolutions.
+  </p>
+  </>,
+  challenges:
+  <>
+  <p>
+    One of my biggest challenges was redesigning the database schemas of an app that had taken advantage of local computer memory to store hundreds of tables containing 4096 rows. Why 4096 rows? Because that's the number of IV combos each Pokemon can have. Attack, Defense, and Stamina can be between [0, 15] inclusive, so that's 16 * 16 * 16 = 4096. Each league will have different stats, so the upper limit on the number of rows that would be calculated is (700 Pokemon)(4096 stats/league)(3 leagues/Pokemon) = ~8.6 million rows. The free PostgreSQL database plan from Heroku only gives 10,000 rows, so I knew my old database design was not going to work at all. 
+  </p>
+  <p>  
+    My solution was to store the 4096 stats in a dictionary, then store the dictionary as a Pickled Field Object in the table. Each Pokemon would have its own table containing 3 dictionaries containing the stats for each league. 8.6 million rows successfully reduced to less than 3000!
+  </p>
+  </>
+}
+
 const ProjectWriteup = {
   project1
 }

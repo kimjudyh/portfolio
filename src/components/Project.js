@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectTemplate from './ProjectTemplate';
-import { project1, project2, project3, project4, project5, project6 } from './ProjectWriteup';
+import { project1, project2, project3, project4, project5, project6, project7 } from './ProjectWriteup';
 
 const Project = () => {
   return (
@@ -89,6 +89,19 @@ const Project = () => {
         bestParts={project6.bestParts}
         challenges={project6.challenges}
         left='8%'
+      />
+
+      {/* Project 7 - PoGo PVP Analysis */}
+      <ProjectTemplate
+        thumbnailURL={process.env.PUBLIC_URL + '/images/pogo_thumbnail.png'}
+        projectURL='https://fullstack-pvp.herokuapp.com/'
+        githubURL='https://github.com/kimjudyh/pogo_pvp_fullstack'
+        summary={project7.summary}
+        projectTechnology={project7.projectTechnology}
+        timeline={project7.timeline}
+        bestParts={project7.bestParts}
+        challenges={project7.challenges}
+        left='-8%'
       />
     </div>
   )
