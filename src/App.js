@@ -1,5 +1,5 @@
 import React from 'react';
-// import './App.css';
+import './prism.css';
 import About from './components/About';
 import Project from './components/Project';
 import Resume from './components/Resume';
