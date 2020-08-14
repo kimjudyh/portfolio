@@ -164,3 +164,9 @@ pre[class*="language-"].line-numbers > code {
 			text-align: right;
 		}
 
+
+@media (max-width: 450px) {
+	pre {
+		width: 75vw;
+	}
+}
