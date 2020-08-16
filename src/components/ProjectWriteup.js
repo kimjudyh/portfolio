@@ -11,9 +11,33 @@ export const project1 = {
   timeline:
   <p>April 3 - April 10, 2020</p>,
   bestParts:
+  <>
   <p>
     It was so satisfying to see all the pieces come together - the CSS, event listeners placed on the DOM, the timers to make bunnies and snakes pop up randomly, and the logic to enable or disable buttons.
-  </p>,
+  </p>
+  <p>I had a lot of fun coming up with different achievements like Bunny Bopper and Gold Rush. I used some jQuery to get a banner to appear when you unlocked an achievement.</p>
+  <pre><code className="language-javascript">
+  {`
+goldRushCheck() {
+  if (this.animalCount.goldBunny === 10) {
+    // add x points to score, getting in later level gives less points
+    this.score += Math.floor(600 / this.level);
+    // add achievement to achievement array
+    this.achievementsArray.push('Gold Rush');
+    // change text of banner
+    document.querySelector('.banner h5').textContent = 'Gold Rush Unlocked!';
+    // display banner when this is unlocked...
+    $('.banner').slideToggle('normal');
+    // wait to hide banner
+    setTimeout(function() {
+      $('.banner').slideToggle('normal');
+    }, 2000);
+  }
+}
+  `}
+  </code></pre>
+  </>
+  ,
   challenges:
   <p>
     I had trouble with the timers because I was forgetting to clear them! I was very perplexed as my level timer counted down at an accelerating pace. Once I figured that out, controlling the length of time a bunny appeared and how often it popped up during the level was more manageable. 
@@ -37,6 +61,41 @@ export const project2 = {
   <p>
     I'm happy that I figured out how to integrate Cloudinary for image upload, storage, and retrieval. Since I didn't use their upload widget (I figured out how to do that for my final project), I used a simple CSS animation and client-side javascript to display a loading indicator.
   </p>
+  <p>The JavaScript for the loading indicator:</p>
+  <pre><code className="language-javascript">
+  {`
+// grab Submit button on Photo Create page
+const newPhotoButton = document.querySelector('#newPhotoButton');
+// grab container that Submit button resides in
+const container = document.querySelector('.container')
+
+// show Loading animation after user clicks submit
+if (newPhotoButton) {
+  newPhotoButton.addEventListener('click', () => {
+    const progress = document.createElement('p');
+    progress.classList.add('progress-indicator');
+    progress.innerHTML = '<h2>Loading...</h2>';
+    container.appendChild(progress)
+  })
+}
+  `} 
+  </code></pre>
+  <p>The CSS for animating the loading indicator:</p>
+  <pre><code className="language-css">
+  {`
+@keyframes loading {
+  0% {color: #F1F1F1DE;}
+  50% {color: #27272755;}
+  100% {color: #F1F1F1DE;}
+}
+.progress-indicator {
+  text-align: center;
+  animation-name: loading;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+  `} 
+  </code></pre>
   </>,
   challenges:
   <>
@@ -61,7 +120,38 @@ export const project3 = {
   timeline:
   <p>May 13 - May 20, 2020</p>,
   bestParts:
-  <p>The best part for me was discovering the wealth of tools that Django provides. One of the tools I used was the built-in messages module. I configured it so that it displayed a one-time message on the page for events such as a successful lesson booking, a cancellation, or login error.</p>,
+  <>
+  <p>The best part for me was discovering the wealth of tools that Django provides. One of the tools I used was the built-in messages module. I configured it so that it displayed a one-time message on the page for events such as a successful lesson booking, a cancellation, or login error.</p>
+  <p>
+    Another built-in tool I used were the authorization decorators, like login_required and user_passes_test. I created custom tests to check if a user was a student or a teacher, then applied the decorator to restrict access based on their role.
+  </p>
+  <pre><code className="language-python">
+  {`
+# ==== User Permission Tests
+def user_is_student(user):
+    return user.student_set.count() != 0
+
+
+def user_is_teacher(user):
+    return user.teacher_set.count() != 0
+
+# Delete Lesson
+@login_required
+@user_passes_test(user_is_teacher)
+def delete_lesson(request, lesson_id):
+    # get lesson to delete from database
+    lesson = Lesson.objects.get(id=lesson_id)
+    # delete from database
+    lesson.delete()
+    # get teacher id from current user that's logged in
+    user = request.user
+    teacher_id = user.teacher_set.first().id
+    # redirect to teacher's private profile
+    return redirect('teacher_profile', teacher_id=teacher_id)    
+  `}
+  </code></pre>
+  </>
+  ,
   challenges:
   <>
   <p>I did not enjoy adding classes to form input fields! It felt like extra work to redefine the type of input field, something that my classmate did in the model schema, just to add the "form-control" class.</p>
@@ -88,8 +178,25 @@ export const project4 = {
     I learned so much about designing a website during this collabathon, especially how to utilize Figma to establish the color scheme and font styles. I used the design concepts I learned from this project in my final project. 
   </p>
   <p>
-    Some code I'm proud of is the live signup form verification. This was a request from the design team that I wasn't sure I could fulfill, but working off of Bootstrap's input verification code, I got something working by presentation time. I attached event listeners on each input field that triggered verification on a focus out event. So if the user clicked the field and left without filling it out, a red x appeared. If the field was filled out correctly, a green checkmark appeared before the user hit submit.
+    Some code I'm proud of is the live signup form verification. This was a request from the design team that I wasn't sure I could fulfill, but working off of Bootstrap's input verification code, I got something working by presentation time. I attached event listeners on each input field that triggered the checkValidity() HTML5 method on a focus out event. So if the user clicked the field and left without filling it out, a red x appeared. If the field was filled out correctly, a green checkmark appeared before the user hit submit.
   </p>
+  <pre><code className="language-javascript">
+  {`
+divChild.addEventListener('focusout', (event) => {
+  // remove existing is-invalid class
+  if (divChild.classList.contains('is-invalid')) {
+    divChild.classList.remove('is-invalid');
+  }
+  if (divChild.checkValidity() === true) {
+    // add bootstrap class that visually shows validity
+    divChild.classList.add('is-valid');
+  } else {
+    // add bootstrap class that visually shows invalidity
+    divChild.classList.add('is-invalid');
+  }
+})
+  `} 
+  </code></pre>
   </>,
   challenges:
   <p>
@@ -116,6 +223,28 @@ export const project5 = {
   <p>
     I'm proud of overcoming my initial discomfort with React and React Hooks to create an entire website using Hooks. It was a great exercise in learning by doing. In addition to referencing the labs and homeworks we had done in class, I watched the <a href="https://youtu.be/dpw9EHDh2bM?t=1057" alt="Youtube video of React Today and Tomorrow and 90% Cleaner React with Hooks">official introduction of Hooks at the React Conf 2018</a> over and over again. With each new component and call to useState and useEffect, I became better at "thinking in React" and using Hooks. It was very gratifying to go from a sort of anxiousness over whether I could make the website as I envisioned it, to seeing the deployed product.
   </p>
+  <p>A custom hook that I used a lot toggled the display of elements on and off. I used it whenever I wanted to show or hide details and forms. I even reused it on this portfolio site!</p>
+  <pre><code className="language-javascript">
+  {`
+// custom hook to toggle element display between flex and none
+export const useFormDisplay = () => {
+  const [formDisplay, setFormDisplay] = useState({display: 'none'})
+  const toggleFormDisplay = () => {
+    // toggle show form state
+    if (formDisplay.display === 'none') {
+      setFormDisplay({display: 'flex'})
+    } else {
+      setFormDisplay({display: 'none'})
+    }
+  }
+  return ({
+    formDisplay,
+    toggleFormDisplay
+  })
+}
+  `}
+    
+  </code></pre>
   <p>
     I also went all out during the planning phase and created detailed wireframes in Figma. I had tried to use Figma on the Django project, but my unfamiliarity with the tool and lack of time to learn it (we had one day to come up with all planning materials required for project approvals!) led me to use a more familiar tool, PowerPoint. But after seeing the power of Figma during the Collabathon, I was determined to use it for my final project wireframes. I inspected the Collabathon Figma board and used it as a guide when setting up my first frames. I also used the prototyping feature to mimic the user flow. This was an iterative process, as often I would realize that I was missing a screen.
   </p>
@@ -125,6 +254,25 @@ export const project5 = {
   <p>
     Creating a separate backend on a different server was challenging because I hadn't done it before. We learned about multi-server architecture during our React module and worked on code that the instructor had set up for us, but we hadn't made a 2-server system from scratch. Luckily, we went over how to use Postman to test our API endpoints, so when the time came to get the client-side talking to the backend (with CORS enabled!), it went smoothly.
   </p>
+  <p>One thing I had to configure was allowing axios to pass cookies between the frontend and backend:</p>
+  <pre><code className="language-javascript">
+  {`
+import axios from 'axios';
+
+const cookieAxios = axios.create({
+  withCredentials: true
+});
+
+export default class UserModel {
+  // login user
+  // POST '/login'
+  static login = (data) => {
+    const request = cookieAxios.post(\`\${authEndpoint}/login\`, data);
+    return request;
+  }
+}
+  `}
+  </code></pre>
   </>
 }
 
@@ -148,6 +296,31 @@ export const project6 = {
   <p>
     Deploying a Create React App to Github Pages was a bit more involved than I expected. I wanted to try a hosting service other than Heroku, which we had used in class for almost every project. The problem with the free tier of Heroku is that the server falls asleep after some (rather short) period of inactivity, and when it's time to wake up, it takes a minute. I figured that since my portfolio doesn't have a backend, I could use Github Pages. I ran into some gh-pages configuration issues, accidentally pushed the build files to the master branch, had to do a git reset --hard to restore the master branch to a previous commit, but a couple hours of determined troubleshooting led to a successful deployment! 
   </p>
+  <p>I got deployment to work by setting my homepage as the first line in the package.json, and setting the deploy script as follows:</p>
+  <pre><code className="language-json">
+  {`
+{
+  "homepage": "https://pages.git.generalassemb.ly/judykim-ga/portfolio/",
+  "name": "react-portfolio",
+  ...
+  "dependencies": {
+    ...
+    "gh-pages": "^3.1.0",
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    ...
+  }, ...
+  `}
+  </code></pre>
+  <p>And when I ran into an issue where I needed to remove the gh-pages git branch, I used the built-in script from the gh-pages package:</p>
+  <pre><code>
+  {`
+$ node node_modules/gh-pages/bin/gh-pages-clean
+  `}
+  </code></pre>
   </>
 }
 
