@@ -9,7 +9,8 @@ const Project = () => {
       <div className="project-blurb">
 
       <p>
-         Here are the projects that I am proud to showcase. Most of these came from my time at General Assembly and were completed under a time crunch.
+         Here are the projects that I am proud to showcase. Most of these came from my time at General Assembly 
+         and were completed under a time crunch.
       </p>
       </div>
       {/* Project 1 - Pet a Bunny */}
