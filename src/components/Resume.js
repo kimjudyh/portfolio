@@ -7,10 +7,14 @@ const Resume = () => {
     <div className="resume" id="resume-link">
       <h2>resume</h2>
       <p>
-        I'm currently seeking a fullstack software engineer position. My knowledge of the frontend and backend lets me contribute and debug in any part of the stack. 
+        I'm currently seeking a fullstack software engineer position. 
+        My knowledge of the frontend and backend lets me contribute and debug in any part of the stack. 
       </p>
       <p>
-        I've taken the manufacturing concept, design for x, or the idea of designing for downstream users, to heart and have transferred it to my coding projects. Just like how a spacecraft part needs to be designed for analysis, manufacturing, and testing, I strive to create software that meets the needs of a diverse group of users. 
+        I've taken the manufacturing concept, design for x, or the idea of designing for downstream users, 
+        to heart and have transferred it to my coding projects. 
+        Just like how a spacecraft part needs to be designed for analysis, manufacturing, and testing, 
+        I strive to create software that meets the needs of a diverse group of users. 
       </p>
       <div className="skills">
         <h3>skills</h3>
@@ -24,7 +28,9 @@ const Resume = () => {
           <strong>Back End:</strong> Node.js · Express · MongoDB · Mongoose · Django · PostgreSQL
         </p>
         <p>
-          <strong>Coding Skills:</strong> Git · OOP · ORM · Data Structures · Algorithms · Continuous Integration · REST · MVC · Unix · vim · Virtual Environments · Pytest · numpy · pandas · Tableau · Travis CI · Postman · React Router
+          <strong>Coding Skills:</strong> Git · OOP · ORM · Data Structures · Algorithms · Continuous Integration 
+          · REST · MVC · Unix · vim · Virtual Environments · Pytest · numpy · pandas · Tableau · Travis CI 
+          · Postman · React Router
 
         </p>
         <p>
