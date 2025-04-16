@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/judykim-ga/portfolio/static/css/main.702a91b5.css",
+    "main.js": "/judykim-ga/portfolio/static/js/main.41cfeea4.js",
+    "index.html": "/judykim-ga/portfolio/index.html",
+    "main.702a91b5.css.map": "/judykim-ga/portfolio/static/css/main.702a91b5.css.map",
+    "main.41cfeea4.js.map": "/judykim-ga/portfolio/static/js/main.41cfeea4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.702a91b5.css",
+    "static/js/main.41cfeea4.js"
+  ]
+}
